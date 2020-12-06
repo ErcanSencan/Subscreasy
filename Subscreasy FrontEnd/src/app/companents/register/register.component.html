@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <title>Register</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body >
+    
+
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="col-sm-11 col-md-8 col-lg-6 col-xl-5 m-auto">
+                <div class="card border-danger ">
+                   
+                        <div class="card-body">
+                        
+                            <h3 class="card-title text-danger tex-left">Register</h3>
+                            <hr>
+                            <div class="input-group form-group mt-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                 <input type="text" class="form-control" placeholder="Username" #username>
+                            </div>
+
+                            <div class="input-group form-group mt-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Password" #password>
+                            </div>
+                            <div class="input-group form-group mt-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Repeat Password" #repeat_password>
+                            </div>
+
+                            <div class="input-group form-group mt-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Name" #name>
+                            </div>
+                            <div class="input-group form-group mt-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Lastname" #lastname>
+                            </div>
+
+    
+                        </div>
+
+                        <div class="card-footer bg-transparent">
+                                <input type="submit" value="Register" class="btn float-right btn-outline-danger login_btn px-4 py-2 m-2" (click)="RegisterUser(username,password,repeat_password,name,lastname)">
+                        </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
